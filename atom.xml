@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2014-01-30T11:24:26.781Z</updated>
+  <updated>2014-01-30T11:26:05.056Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,13 +15,12 @@
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[Hello World]]></title>
+    <title><![CDATA[Hello new year]]></title>
     <link href="http://yoursite.com/2014/01/30/hello-world/"/>
     <id>http://yoursite.com/2014/01/30/hello-world/</id>
     <published>2014-01-30T07:49:50.000Z</published>
-    <updated>2014-01-30T11:24:11.000Z</updated>
-    <content type="html"><![CDATA[<p>Happy new year!
-Welcome to <a href="http://zespia.tw/hexo" target="_blank">Hexo</a>! This is your very first post. Check <a href="http://zespia.tw/hexo/docs" target="_blank">documentation</a> to learn how to use.</p>
+    <updated>2014-01-30T11:25:58.000Z</updated>
+    <content type="html"><![CDATA[<p>Hello everybody! Happy new year!</p>
 ]]></content>
     
     
