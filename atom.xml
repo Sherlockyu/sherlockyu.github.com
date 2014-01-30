@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title><![CDATA[Sherlockyu's blog]]></title>
-  
+  <subtitle><![CDATA[水+水+水，就是水立方啊！！o(*≧▽≦)ツ]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2014-01-30T12:57:36.031Z</updated>
+  <updated>2014-01-30T13:23:55.434Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
     <name><![CDATA[Sherlockyu]]></name>
-    
+    <email><![CDATA[garyu1526@gmail.com]]></email>
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
