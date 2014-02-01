@@ -10,6 +10,35 @@
 话说这些东西都能记住么
 先来看看怎么粘代码：
 行的开头空4个空格，表示程序代码，例如：
+C:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+#include &lt;stdio.h&gt;
+#define MAXN 100+10
+int a[MAXN];
+int main()  {
+    int i, x, n = 0;
+    printf(&quot;Please enter numbers using &#39;e&#39; for ending.&quot;);
+    while(scanf(&quot;%d&quot;, &amp;x) == 1)
+        a[n++] = x;
+    for(i = n-1; i &gt;= 1; i--)
+        printf(&quot;%d &quot;, a[i]);
+    printf(&quot;%d\n&quot;, a[0]);
+    return 0;
+}
+
+
 C#:
 1
 2
@@ -242,6 +271,35 @@ print dict([(i[0],list(i[1])) for i in groupby(sorted(keywords),lambda    x:x[0]
 <p><em>话说这些东西都能记住么</em></p>
 <p><strong>先来看看怎么粘代码：</strong></p>
 <p>行的开头空4个空格，表示程序代码，例如：</p>
+<p>C:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="code"><pre><span class="preprocessor">#include &lt;stdio.h&gt;</span>
+<span class="preprocessor">#define MAXN 100+10</span>
+<span class="keyword">int</span> a[MAXN];
+<span class="keyword">int</span> main()  {
+    <span class="keyword">int</span> i, x, n = <span class="number">0</span>;
+    <span class="built_in">printf</span>(<span class="string">"Please enter numbers using 'e' for ending."</span>);
+    <span class="keyword">while</span>(<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &x) == <span class="number">1</span>)
+        a[n++] = x;
+    <span class="keyword">for</span>(i = n-<span class="number">1</span>; i &gt;= <span class="number">1</span>; i--)
+        <span class="built_in">printf</span>(<span class="string">"%d "</span>, a[i]);
+    <span class="built_in">printf</span>(<span class="string">"%d\n"</span>, a[<span class="number">0</span>]);
+    <span class="keyword">return</span> <span class="number">0</span>;
+}
+</pre></td></tr></table></figure>
+
 <p>C#:</p>
 <figure class="highlight c#"><table><tr><td class="gutter"><pre>1
 2
@@ -303,7 +361,12 @@ document.write(fib(<span class="number">10</span>));
 </pre></td></tr></table></figure>
 
 <p>java和javascript的刚开始怎么都不太好使，一顿瞎调之后竟然好了！</p>
-<p>另外，公式都怎么输进去？</p>
+<p>图片：<img src="http://ww2.sinaimg.cn/large/6109b325tw1ed3qe9o8wlj21hc0xc7b0.jpg" alt="123.jpg"></p>
+<p>另外，公式都怎么输进去？从猴子那偷来了几个，先存着haha</p>
+<p>$$ \nabla\cdot{\bf D} = \rho $$
+$$ \nabla\cdot{\bf B} = 0 $$
+$$ \nabla\times{\bf E} = -\frac{\partial{\bf B}}{\partial{\bf t}}$$
+$$ \nabla\times{\bf H} = {\bf J} + \frac{\partial{\bf D}}{\partial{\bf t}} $$</p>
 
       
     </div>
