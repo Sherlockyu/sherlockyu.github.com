@@ -4,7 +4,7 @@
   <subtitle><![CDATA[水+水+水，就是水立方啊！！o(*≧▽≦)ツ]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2014-02-01T03:58:55.550Z</updated>
+  <updated>2014-02-01T04:05:45.145Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://yoursite.com/2014/01/31/my-new-post/"/>
     <id>http://yoursite.com/2014/01/31/my-new-post/</id>
     <published>2014-01-31T03:04:37.000Z</published>
-    <updated>2014-02-01T03:58:27.000Z</updated>
+    <updated>2014-02-01T04:05:37.000Z</updated>
     <content type="html"><![CDATA[<p>网上说这玩意要用markdown，今天来试试看。</p>
 <p><em>话说这些东西都能记住么</em></p>
 <p><strong>先来看看怎么粘代码：</strong></p>
@@ -121,6 +121,8 @@ document.write(fib(<span class="number">10</span>));
 $$ \nabla\cdot{\bf B} = 0 $$
 $$ \nabla\times{\bf E} = -\frac{\partial{\bf B}}{\partial{\bf t}}$$
 $$ \nabla\times{\bf H} = {\bf J} + \frac{\partial{\bf D}}{\partial{\bf t}} $$</p>
+<p>哎呀，公式这个好像不好使。。。一会再找找。。。</p>
+<p>特别感谢<a href="http://zipperary.com/" target="_blank">Zippera</a>的博客一直以来的大力帮助！！</p>
 ]]></content>
     <summary type="html"><![CDATA[<p>网上说这玩意要用markdown，今天来试试看。</p>
 <p><em>话说这些东西都能记住么</em></p>
