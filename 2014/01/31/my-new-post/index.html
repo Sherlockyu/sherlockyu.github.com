@@ -9,7 +9,8 @@
   <meta name="description" content="网上说这玩意要用markdown，今天来试试看。
 话说这些东西都能记住么
 先来看看怎么粘代码：
-行的开头空4个空格，表示程序代码，但是这样会没有行号，这里我用的是：
+行的开头空4个空格，表示程序代码，但是这样会没有行号，这里我用的是另一种方法
+C:
 1
 2
 3
@@ -23,22 +24,6 @@
 11
 12
 13
-14
-15
-16
-17
-18
-19
-20
-21
-
-代码
-
-···
-
-C:
-
-```c
 #include &lt;stdio.h&gt;
 #define MAXN 100+10
 int a[MAXN];
@@ -285,8 +270,9 @@ print dict([(i[0],list(i[1])) for i in groupby(sorted(keywords),lambda    x:x[0]
         <p>网上说这玩意要用markdown，今天来试试看。</p>
 <p><em>话说这些东西都能记住么</em></p>
 <p><strong>先来看看怎么粘代码：</strong></p>
-<p>行的开头空4个空格，表示程序代码，但是这样会没有行号，这里我用的是：</p>
-<figure class="highlight 语言名"><table><tr><td class="gutter"><pre>1
+<p>行的开头空4个空格，表示程序代码，但是这样会没有行号，这里我用的是另一种方法</p>
+<p>C:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -299,23 +285,7 @@ print dict([(i[0],list(i[1])) for i in groupby(sorted(keywords),lambda    x:x[0]
 11
 12
 13
-14
-15
-16
-17
-18
-19
-20
-21
-</pre></td><td class="code"><pre>
-代码
-
-···
-
-C:
-
-```c
-<span class="preprocessor">#include &lt;stdio.h&gt;</span>
+</pre></td><td class="code"><pre><span class="preprocessor">#include &lt;stdio.h&gt;</span>
 <span class="preprocessor">#define MAXN 100+10</span>
 <span class="keyword">int</span> a[MAXN];
 <span class="keyword">int</span> main()  {
@@ -393,12 +363,9 @@ document.write(fib(<span class="number">10</span>));
 <p>java和javascript的刚开始怎么都不太好使，一顿瞎调之后竟然好了！</p>
 <p>图片：<img src="http://ww2.sinaimg.cn/large/6109b325tw1ed3qe9o8wlj21hc0xc7b0.jpg" alt="123.jpg"></p>
 <p>另外，公式都怎么输进去？从猴子那偷来了几个，先存着haha</p>
-<p>$$\sum_{i\to 2}^i$$</p>
-<p>$$\nabla\cdot{\bf D} = \rho$$
-$$ \nabla\cdot{\bf B} = 0 $$
-$$ \nabla\times{\bf E} = -\frac{\partial{\bf B}}{\partial{\bf t}}$$
-$$ \nabla\times{\bf H} = {\bf J} + \frac{\partial{\bf D}}{\partial{\bf t}} $$</p>
-<p>哎呀，公式这个好像不好使。。。一会再找找。。。</p>
+<p>$E=mc^2$</p>
+<p>$\cos 2\theta = \cos^2 \theta - \sin^2 \theta =  2 \cos^2 \theta - 1$</p>
+<p>$$\frac{\partial u}{\partial t}= h^2 \left( \frac{\partial^2 u}{\partial x^2}+ \frac{\partial^2 u}{\partial y^2}+ \frac{\partial^2 u}{\partial z^2}\right)$$</p>
 <p>特别感谢<a href="http://zipperary.com/" target="_blank">Zippera</a>的博客一直以来的大力帮助！！</p>
 
       
@@ -474,6 +441,7 @@ var duoshuoQuery = {short_name:"huaduoshuo"};
 <ul class="entry">
 <li><a href="http://zipperary.com/" title="Zippera's Blog">Zippera</a></li>
 <li><a href="http://galaxy2416.github.io/" title="Galaxy2416's blog">Galaxy2416</a></li>
+<li><a href="http://www.francislee2020.weebly.com" title="francislee">大工第一帅哥</a></li>
 </ul>
 </div>
 </aside>
@@ -500,5 +468,36 @@ var duoshuoQuery = {short_name:"huaduoshuo"};
 })(jQuery);
 </script>
 
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 </body>
 </html>

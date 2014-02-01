@@ -247,6 +247,7 @@
 <ul class="entry">
 <li><a href="http://zipperary.com/" title="Zippera's Blog">Zippera</a></li>
 <li><a href="http://galaxy2416.github.io/" title="Galaxy2416's blog">Galaxy2416</a></li>
+<li><a href="http://www.francislee2020.weebly.com" title="francislee">大工第一帅哥</a></li>
 </ul>
 </div>
 </aside>
@@ -273,5 +274,36 @@
 })(jQuery);
 </script>
 
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 </body>
 </html>

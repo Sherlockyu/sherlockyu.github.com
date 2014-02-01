@@ -217,8 +217,9 @@
         <p>网上说这玩意要用markdown，今天来试试看。</p>
 <p><em>话说这些东西都能记住么</em></p>
 <p><strong>先来看看怎么粘代码：</strong></p>
-<p>行的开头空4个空格，表示程序代码，但是这样会没有行号，这里我用的是：</p>
-<figure class="highlight 语言名"><table><tr><td class="gutter"><pre>1
+<p>行的开头空4个空格，表示程序代码，但是这样会没有行号，这里我用的是另一种方法</p>
+<p>C:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -231,23 +232,7 @@
 11
 12
 13
-14
-15
-16
-17
-18
-19
-20
-21
-</pre></td><td class="code"><pre>
-代码
-
-···
-
-C:
-
-```c
-<span class="preprocessor">#include &lt;stdio.h&gt;</span>
+</pre></td><td class="code"><pre><span class="preprocessor">#include &lt;stdio.h&gt;</span>
 <span class="preprocessor">#define MAXN 100+10</span>
 <span class="keyword">int</span> a[MAXN];
 <span class="keyword">int</span> main()  {
@@ -373,6 +358,7 @@ C:
 <ul class="entry">
 <li><a href="http://zipperary.com/" title="Zippera's Blog">Zippera</a></li>
 <li><a href="http://galaxy2416.github.io/" title="Galaxy2416's blog">Galaxy2416</a></li>
+<li><a href="http://www.francislee2020.weebly.com" title="francislee">大工第一帅哥</a></li>
 </ul>
 </div>
 </aside>
@@ -399,5 +385,36 @@ C:
 })(jQuery);
 </script>
 
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 </body>
 </html>
