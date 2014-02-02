@@ -4,7 +4,7 @@
   <subtitle><![CDATA[水+水+水，就是水立方啊！！o(*≧▽≦)ツ]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2014-02-02T02:55:59.143Z</updated>
+  <updated>2014-02-02T03:45:03.542Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,11 +15,44 @@
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[hexo 设置以及light主题优化]]></title>
+    <link href="http://yoursite.com/2014/02/02/hexo-setting/"/>
+    <id>http://yoursite.com/2014/02/02/hexo-setting/</id>
+    <published>2014-02-02T03:07:45.000Z</published>
+    <updated>2014-02-02T03:44:56.000Z</updated>
+    <content type="html"><![CDATA[<p>对与搭建hexo博客，我是参照Zippera的<a href="http://zipperary.com/2013/05/28/hexo-guide-2/" target="_blank">教程二</a>，里面介绍的很详细。
+不过最后在<code>_config.yml</code>中添加deploy的时候repository项使用ssh地址会更方便些，不过楼主之前的passphrase设置的过于复杂，所以每次deploy都是很麻烦。</p>
+<h2 id="-light-"><strong>light主题优化</strong></h2>
+<h3 id="-install-"><strong>Install</strong></h3>
+<p><a id="more"></a>
+输入如下并且在<code>..\Hexo</code>下的<code>_config.yml</code>中将<code>theme</code>改为<code>light</code>：</p>
+<pre><code>git clone git://github.com/tommy351/hexo-theme-light.git themes/light
+</code></pre><h3 id="-update-"><strong>Update</strong></h3>
+<p>输入如下：</p>
+<pre><code>cd themes/light
+git pull
+</code></pre><h3 id="-config-"><strong>Config</strong></h3>
+<p>1.menu和widget</p>
+<p>打开<code>..\Hexo\themes\light</code>下的<code>_config.yml</code>,可以对menu和widget进行设置，可以参考zippera<a href="http://zipperary.com/2013/05/30/hexo-guide-4/" target="_blank">教程四</a>。</p>
+<hr>
+<p><strong><em>要出门几天，先写到这。。。</em></strong></p>
+]]></content>
+    <summary type="html"><![CDATA[<p>对与搭建hexo博客，我是参照Zippera的<a href="http://zipperary.com/2013/05/28/hexo-guide-2/" target="_blank">教程二</a>，里面介绍的很详细。
+不过最后在<code>_config.yml</code>中添加deploy的时候repository项使用ssh地址会更方便些，不过楼主之前的passphrase设置的过于复杂，所以每次deploy都是很麻烦。</p>
+<h2 id="-light-"><strong>light主题优化</strong></h2>
+<h3 id="-install-"><strong>Install</strong></h3>
+<p>]]></summary>
+    
+      <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[初体验]]></title>
     <link href="http://yoursite.com/2014/01/31/my-new-post/"/>
     <id>http://yoursite.com/2014/01/31/my-new-post/</id>
     <published>2014-01-31T03:04:37.000Z</published>
-    <updated>2014-02-01T13:56:40.000Z</updated>
+    <updated>2014-02-02T03:34:48.000Z</updated>
     <content type="html"><![CDATA[<p>网上说这玩意要用markdown，今天来试试看。</p>
 <p><em>话说这些东西都能记住么</em></p>
 <p><strong>先来看看怎么粘代码：</strong></p>
@@ -68,15 +101,15 @@
 }
 </pre></td></tr></table></figure>
 
-<p>Python:</p>
+<p><a id="more"></a>
+Python:</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre>1
 2
 </pre></td><td class="code"><pre>keywords = [<span class="string">"dsaa"</span>,<span class="string">"Asd"</span>,<span class="string">"sadc"</span>,<span class="string">"Gdfd"</span>,<span class="string">"gdfdd"</span>,<span class="string">"gaf"</span>,<span class="string">"gabdddddd"</span>,<span class="string">"eg"</span>]
 <span class="keyword">print</span> dict([(i[<span class="number">0</span>],list(i[<span class="number">1</span>])) <span class="keyword">for</span> i <span class="keyword">in</span> groupby(sorted(keywords),<span class="keyword">lambda</span>    x:x[<span class="number">0</span>].lower())])
 </pre></td></tr></table></figure>
 
-<p><a id="more"></a>
-Javascript:</p>
+<p>Javascript:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
 2
 3
@@ -168,13 +201,6 @@ document.write(fib(<span class="number">10</span>));
     <span class="keyword">public</span> <span class="keyword">int</span> Id { <span class="keyword">get</span>; <span class="keyword">set</span>; }
     <span class="keyword">public</span> <span class="keyword">string</span> Subject { <span class="keyword">get</span>; <span class="keyword">set</span>; }
 }
-</pre></td></tr></table></figure>
-
-<p>Python:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre>1
-2
-</pre></td><td class="code"><pre>keywords = [<span class="string">"dsaa"</span>,<span class="string">"Asd"</span>,<span class="string">"sadc"</span>,<span class="string">"Gdfd"</span>,<span class="string">"gdfdd"</span>,<span class="string">"gaf"</span>,<span class="string">"gabdddddd"</span>,<span class="string">"eg"</span>]
-<span class="keyword">print</span> dict([(i[<span class="number">0</span>],list(i[<span class="number">1</span>])) <span class="keyword">for</span> i <span class="keyword">in</span> groupby(sorted(keywords),<span class="keyword">lambda</span>    x:x[<span class="number">0</span>].lower())])
 </pre></td></tr></table></figure>
 
 <p>]]></summary>
