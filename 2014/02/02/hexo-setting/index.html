@@ -230,8 +230,27 @@ Install">
 <pre><code>cd themes/light
 git pull
 </code></pre><h3 id="-config-"><strong>Config</strong></h3>
-<p>1.menu和widget</p>
-<p>打开<code>..\Hexo\themes\light</code>下的<code>_config.yml</code>,可以对menu和widget进行设置，可以参考zippera<a href="http://zipperary.com/2013/05/30/hexo-guide-4/" target="_blank">教程四</a>。</p>
+<p>1.menu——设置导航栏</p>
+<p>打开<code>..\Hexo\themes\light</code>下的<code>_config.yml</code>,可以对menu进行设置，可以参考zippera<a href="http://zipperary.com/2013/05/30/hexo-guide-4/" target="_blank">教程四</a>。</p>
+<p>例如：添加“关于”</p>
+<p>Ⅰ <code>hexo new page &quot;about&quot;</code></p>
+<p>Ⅱ <code>source\about\index.md</code>编辑内容</p>
+<p>Ⅲ <code>themes\light\_config.yml</code>中添加：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre>1
+2
+</pre></td><td class="code"><pre>menu:
+  About: /about
+</pre></td></tr></table></figure>
+
+<p>2.设置背景图片</p>
+<p>打开<code>..\Hexo\themes\light\source\css\_base</code>下的<code>layout.styl</code>，在<code>body</code>段下添加<code>background-image url(&#39;/imgs/grey.png&#39;)</code>，其中<code>imgs</code>放在<code>source</code>文件夹中，另外<strong>一定要将原来的<code>background</code>行删掉</strong>。</p>
+<p>之后把你想用的图片放进去就ok了。</p>
+<p>3.fork me on hithub</p>
+<p>4.标题效果</p>
+<p>打开<code>..\Hexo\themes\light\source\css\_partial</code>下的<code>header.styl</code>，第二行<code>text-shadow 0 0 1px #fff</code>，稍作修改就能出现不同的效果呦~</p>
+<p>修改之前：<img src="http://ww1.sinaimg.cn/large/6109b325tw1ed6j747iryj209s01jglj.jpg" alt="2.png"></p>
+<p>试着将<code>#fff</code>改为<code>#0f0</code></p>
+<p>修改之后：<img src="http://ww4.sinaimg.cn/large/6109b325tw1ed6j5uz1omj20c402zt8u.jpg" alt="1.png"></p>
 <hr>
 <p><strong><em>要出门几天，先写到这。。。</em></strong></p>
 
