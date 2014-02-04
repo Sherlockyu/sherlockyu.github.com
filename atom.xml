@@ -4,7 +4,7 @@
   <subtitle><![CDATA[水+水+水，就是水立方啊！！o(*≧▽≦)ツ]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2014-02-04T08:17:45.382Z</updated>
+  <updated>2014-02-04T08:22:10.989Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://yoursite.com/2014/02/02/hexo-setting/"/>
     <id>http://yoursite.com/2014/02/02/hexo-setting/</id>
     <published>2014-02-02T03:07:45.000Z</published>
-    <updated>2014-02-04T08:14:49.000Z</updated>
+    <updated>2014-02-04T08:21:57.000Z</updated>
     <content type="html"><![CDATA[<p>写这篇呢也就是为了自己以后改什么找什么方便一些，其实大部分都是对Zippera博客的整理。</p>
 <p>对与搭建hexo博客，我是参照Zippera的<a href="http://zipperary.com/2013/05/28/hexo-guide-2/" target="_blank">教程二</a>，里面介绍的很详细。
 不过最后在<code>_config.yml</code>中添加deploy的时候repository项使用ssh地址会更方便些，不过楼主之前的passphrase设置的过于复杂，所以每次deploy都是很麻烦。</p>
@@ -126,6 +126,8 @@ git pull
 <p>同理可添加微博秀啊别的插件什么的。</p>
 <p><strong>9.生成post时默认生成categories和tag</strong></p>
 <p>在<code>scaffolds\post.md</code>中添加categories和tag，应用在<code>page.md</code>和<code>photo.md</code>等。</p>
+<hr>
+<p>大概就这么多，以后做什么修改再补充呗~！</p>
 ]]></content>
     <summary type="html"><![CDATA[<p>写这篇呢也就是为了自己以后改什么找什么方便一些，其实大部分都是对Zippera博客的整理。</p>
 <p>对与搭建hexo博客，我是参照Zippera的<a href="http://zipperary.com/2013/05/28/hexo-guide-2/" target="_blank">教程二</a>，里面介绍的很详细。
