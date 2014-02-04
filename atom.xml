@@ -4,7 +4,7 @@
   <subtitle><![CDATA[水+水+水，就是水立方啊！！o(*≧▽≦)ツ]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2014-02-03T14:00:36.845Z</updated>
+  <updated>2014-02-04T08:12:37.108Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -19,21 +19,22 @@
     <link href="http://yoursite.com/2014/02/02/hexo-setting/"/>
     <id>http://yoursite.com/2014/02/02/hexo-setting/</id>
     <published>2014-02-02T03:07:45.000Z</published>
-    <updated>2014-02-03T13:58:19.000Z</updated>
-    <content type="html"><![CDATA[<p>对与搭建hexo博客，我是参照Zippera的<a href="http://zipperary.com/2013/05/28/hexo-guide-2/" target="_blank">教程二</a>，里面介绍的很详细。
+    <updated>2014-02-04T08:11:27.000Z</updated>
+    <content type="html"><![CDATA[<p>写这篇呢也就是为了自己以后改什么找什么方便一些，其实大部分都是对Zippera博客的整理。</p>
+<p>对与搭建hexo博客，我是参照Zippera的<a href="http://zipperary.com/2013/05/28/hexo-guide-2/" target="_blank">教程二</a>，里面介绍的很详细。
 不过最后在<code>_config.yml</code>中添加deploy的时候repository项使用ssh地址会更方便些，不过楼主之前的passphrase设置的过于复杂，所以每次deploy都是很麻烦。</p>
 <h2 id="-light-"><strong>light主题优化</strong></h2>
 <h3 id="-install-"><strong>Install</strong></h3>
 <p><a id="more"></a>
-输入如下并且在<code>..\Hexo</code>下的<code>_config.yml</code>中将<code>theme</code>改为<code>light</code>：</p>
+输入如下并且在<code>..\Hexo\_config.yml</code>中将<code>theme</code>改为<code>light</code>：</p>
 <pre><code>git clone git://github.com/tommy351/hexo-theme-light.git themes/light
 </code></pre><h3 id="-update-"><strong>Update</strong></h3>
 <p>输入如下：</p>
 <pre><code>cd themes/light
 git pull
 </code></pre><h3 id="-config-"><strong>Config</strong></h3>
-<p>1.menu——设置导航栏</p>
-<p>打开<code>..\Hexo\themes\light</code>下的<code>_config.yml</code>,可以对menu进行设置，可以参考zippera<a href="http://zipperary.com/2013/05/30/hexo-guide-4/" target="_blank">教程四</a>。</p>
+<p><strong>1.menu——设置导航栏</strong></p>
+<p>打开<code>..\Hexo\themes\light\_config.yml</code>,可以对menu进行设置，可以参考zippera<a href="http://zipperary.com/2013/05/30/hexo-guide-4/" target="_blank">教程四</a>。</p>
 <p>例如：添加“关于”</p>
 <p>Ⅰ <code>hexo new page &quot;about&quot;</code></p>
 <p>Ⅱ <code>source\about\index.md</code>编辑内容</p>
@@ -44,20 +45,90 @@ git pull
   About: /about
 </pre></td></tr></table></figure>
 
-<p>2.设置背景图片</p>
-<p>打开<code>..\Hexo\themes\light\source\css\_base</code>下的<code>layout.styl</code>，在<code>body</code>段下添加<code>background-image url(&#39;/imgs/grey.png&#39;)</code>，其中<code>imgs</code>放在<code>source</code>文件夹中，另外<strong>一定要将原来的<code>background</code>行删掉</strong>。</p>
+<p><strong>2.设置背景图片</strong></p>
+<p>打开<code>..\Hexo\themes\light\source\css\_base\layout.styl</code>，在<code>body</code>段下添加<code>background-image url(&#39;/imgs/grey.png&#39;)</code>，其中<code>imgs</code>放在<code>source</code>文件夹中，另外<strong>一定要将原来的<code>background</code>行删掉</strong>。</p>
 <p>之后把你想用的图片放进去就ok了。</p>
-<p>3.fork me on hithub</p>
-<p>4.标题效果</p>
-<p>打开<code>..\Hexo\themes\light\source\css\_partial</code>下的<code>header.styl</code>，第二行<code>text-shadow 0 0 1px #fff</code>，稍作修改就能出现不同的效果呦~</p>
+<p><strong>3.fork me on hithub</strong></p>
+<p>打开<code>..\Hexo\themes\light\layout\_partial\head.ejs</code>，在<code>&lt;head&gt;</code>段内添加如下：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre>1
+2
+3
+</pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"https://github.com/Sherlockyu"</span> <span class="attribute">target</span>=<span class="value">"_blank"</span>&gt;</span>
+<span class="tag">&lt;<span class="title">img</span> <span class="attribute">style</span>=<span class="value">"position: absolute; top: 0; left: 0; border: 0;"</span> <span class="attribute">src</span>=<span class="value">"https://s3.amazonaws.com/github/ribbons/forkme_left_white_ffffff.png"</span> <span class="attribute">alt</span>=<span class="value">"Fork me on GitHub"</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+</pre></td></tr></table></figure>
+
+<p><strong>4.标题效果</strong></p>
+<p>打开<code>..\Hexo\themes\light\source\css\_partial\header.styl</code>，第二行<code>text-shadow 0 0 1px #fff</code>，稍作修改就能出现不同的效果呦~</p>
 <p>修改之前：<img src="http://ww1.sinaimg.cn/large/6109b325tw1ed6j747iryj209s01jglj.jpg" alt="2.png"></p>
 <p>试着将<code>#fff</code>改为<code>#0f0</code></p>
 <p>修改之后：<img src="http://ww4.sinaimg.cn/large/6109b325tw1ed6j5uz1omj20c402zt8u.jpg" alt="1.png"></p>
-<p>另外设置blog字体大小，打开<code>..\Hexo\themes\light\source\css\_base</code>下的<code>layout.styl</code>，在<code>body</code>段下<code>font-size</code>修改。</p>
-<hr>
-<p><strong><em>要出门几天，先写到这。。。</em></strong></p>
+<p>另外设置blog字体大小，打开<code>..\Hexo\themes\light\source\css\_base\layout.styl</code>，在<code>body</code>段下<code>font-size</code>修改。
+不过这个改的应该是整个页面整体字体的大小~~</p>
+<p><strong>5.添加标签页小图标</strong></p>
+<p>打开<code>..\Hexo\themes\light\layout\_partial\head.ejs</code>，将</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">link</span> <span class="attribute">href</span>=<span class="value">"&lt;%- config.root %&gt;favicon.png"</span> <span class="attribute">rel</span>=<span class="value">"icon"</span>&gt;</span>
+</pre></td></tr></table></figure>
+
+<p>替换成</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">link</span> <span class="attribute">href</span>=<span class="value">"&lt;%- config.root %&gt;favicon.ico"</span> <span class="attribute">rel</span>=<span class="value">"icon"</span> <span class="attribute">type</span>=<span class="value">"image/x-ico"</span>&gt;</span>
+</pre></td></tr></table></figure>
+
+<p>其中<code>favicon.ico</code>文件放在<code>source</code>下。</p>
+<p>图标制作网站：<a href="http://www.faviconer.com" target="_blank">www.favicon.con</a>。</p>
+<p><strong>6.添加多说</strong></p>
+<p>注册<a href="http://duoshuo.com/" target="_blank">多说</a>，获得通用代码，复制到<code>..\Hexo\themes\light\layout\_partial\comment.ejs</code>中</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="vbscript">&lt;% <span class="keyword">if</span>(page.comments){ %&gt;</span>
+<span class="tag">&lt;<span class="title">section</span> <span class="attribute">id</span>=<span class="value">"comment"</span>&gt;</span>
+通用代码
+<span class="tag">&lt;/<span class="title">section</span>&gt;</span>
+<span class="vbscript">&lt;% } %&gt;</span>
+</pre></td></tr></table></figure>
+
+<p><strong>7.添加百度分享</strong></p>
+<p>在<a href="http://share.baidu.com/code" target="_blank">百度分享</a>获得代码，复制到<code>..\Hexo\themes\light\layout\_partial\comment.ejs</code>中，将<code>&lt;%-partial(&#39;post/share&#39;)%&gt;</code>删掉替换为百度代码。</p>
+<p><strong>8.添加各种widget</strong></p>
+<p>在<code>..\Hexo\themes\light\_config.yml</code>中，如下：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+</pre></td><td class="code"><pre>widgets:
+-category
+-tag
+-blogroll
+-...
+</pre></td></tr></table></figure>
+
+<p>其中blogroll是友情链接，在<code>..\Hexo\themes\light\layout\_widget</code>中新建<code>blogroll.ejs</code>文件，编辑如下</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"widget tag"</span>&gt;</span>
+<span class="tag">&lt;<span class="title">h3</span> <span class="attribute">class</span>=<span class="value">"title"</span>&gt;</span>友情链接<span class="tag">&lt;/<span class="title">h3</span>&gt;</span>
+<span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"entry"</span>&gt;</span>
+<span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"http://sherlockyu.github.io/"</span> <span class="attribute">title</span>=<span class="value">"Zippera's Blog"</span>&gt;</span>Zippera<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+</pre></td></tr></table></figure>
+
+<p>同理可添加微博秀啊别的插件什么的。</p>
+<p><strong>9.生成post时默认生成categories和tag</strong></p>
+<p>在<code>scaffolds\post.md</code>中添加categories和tag，应用在<code>page.md</code>和<code>photo.md</code>等。</p>
 ]]></content>
-    <summary type="html"><![CDATA[<p>对与搭建hexo博客，我是参照Zippera的<a href="http://zipperary.com/2013/05/28/hexo-guide-2/" target="_blank">教程二</a>，里面介绍的很详细。
+    <summary type="html"><![CDATA[<p>写这篇呢也就是为了自己以后改什么找什么方便一些，其实大部分都是对Zippera博客的整理。</p>
+<p>对与搭建hexo博客，我是参照Zippera的<a href="http://zipperary.com/2013/05/28/hexo-guide-2/" target="_blank">教程二</a>，里面介绍的很详细。
 不过最后在<code>_config.yml</code>中添加deploy的时候repository项使用ssh地址会更方便些，不过楼主之前的passphrase设置的过于复杂，所以每次deploy都是很麻烦。</p>
 <h2 id="-light-"><strong>light主题优化</strong></h2>
 <h3 id="-install-"><strong>Install</strong></h3>
