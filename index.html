@@ -207,6 +207,53 @@
     <header>
       
         <div class="icon"></div>
+        <time datetime="2014-02-09T06:51:03.000Z"><a href="/2014/02/09/hexo-totop/">2月 9 2014</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2014/02/09/hexo-totop/">Hexo优化：添加返回顶部按钮</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>参考<a href="http://wuchong.me/blog/2014/01/08/hexo-scrollup/" target="_blank">Jack</a>的blog，成功添加了<code>返回顶部</code>按钮。</p>
+<h2 id="-html-">添加HTML代码</h2>
+<p>新建文件<code>\themes\light\layout\_partial\totop.ejs</code>，打开后添加如下：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre>1
+2
+3
+</pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"totop"</span> <span class="attribute">style</span>=<span class="value">"position:fixed;bottom:150px;right:50px;cursor: pointer;"</span>&gt;</span>
+<span class="tag">&lt;<span class="title">a</span> <span class="attribute">title</span>=<span class="value">"返回顶部"</span>&gt;</span><span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">"/imgs/scrollup.png"</span>/&gt;</span><span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+</pre></td></tr></table></figure>
+
+<p>
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2014/02/09/hexo-totop/#more" class="more-link">Read More</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
         <time datetime="2014-02-02T03:07:45.000Z"><a href="/2014/02/02/hexo-setting/">2月 2 2014</a></time>
       
       
@@ -291,21 +338,6 @@
 }
 </pre></td></tr></table></figure>
 
-<p>C#:</p>
-<figure class="highlight c#"><table><tr><td class="gutter"><pre>1
-2
-3
-4
-5
-6
-</pre></td><td class="code"><pre><span class="comment">//这里显示一些代码，在正文显示中会自动识别语言，进行代码染色，这是一段C#代码</span>
-<span class="keyword">public</span> <span class="keyword">class</span> Blog
-{
-    <span class="keyword">public</span> <span class="keyword">int</span> Id { <span class="keyword">get</span>; <span class="keyword">set</span>; }
-    <span class="keyword">public</span> <span class="keyword">string</span> Subject { <span class="keyword">get</span>; <span class="keyword">set</span>; }
-}
-</pre></td></tr></table></figure>
-
 <p>
       
     </div>
@@ -371,20 +403,9 @@
   <h3 class="title">分类</h3>
   <ul class="entry">
   
-    <li><a href="/categories/Hexo/">Hexo</a><small>1</small></li>
+    <li><a href="/categories/Hexo/">Hexo</a><small>2</small></li>
   
     <li><a href="/categories/杂谈/">杂谈</a><small>1</small></li>
-  
-  </ul>
-</div>
-
-
-  
-<div class="widget tag">
-  <h3 class="title">标签</h3>
-  <ul class="entry">
-  
-    <li><a href="/tags/杂谈/">杂谈</a><small>1</small></li>
   
   </ul>
 </div>
@@ -455,5 +476,11 @@
 
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
+
+<div id="totop" style="position:fixed;bottom:150px;right:50px;cursor: pointer;">
+<a title="返回顶部"><img src="/imgs/scrollup.png"/></a>
+</div>
+<script src="/js/totop.js"></script>
+
 </body>
 </html>
