@@ -379,7 +379,7 @@ header .title a:hover {
   border-radius: 3px;
 }
 .entry pre {
-  background: #eee;
+  background: #1d1d1d;
   border: 1px solid #ddd;
   margin-top: 15px;
   overflow: auto;
@@ -737,13 +737,12 @@ footer .addthis iframe {
   color: #258fb8;
 }
 figure.highlight {
-  background: #eee;
+  background: #1d1d1d;
   border: 1px solid #ddd;
   margin-top: 15px;
   padding: 7px 15px;
   -webkit-border-radius: 2px;
   border-radius: 2px;
-  text-shadow: 0 0 1px #fff;
   line-height: 1.6;
   overflow: auto;
   position: relative;
@@ -770,12 +769,12 @@ figure.highlight table {
 figure.highlight .gutter {
   color: #999;
   padding-right: 15px;
-  border-right: 1px solid #ddd;
+  border-right: 0px solid #ddd;
   text-align: right;
 }
 figure.highlight .code {
   padding-left: 15px;
-  border-left: 1px solid #fff;
+  border-left: 0px solid #fff;
   color: #666;
 }
 pre .comment,
