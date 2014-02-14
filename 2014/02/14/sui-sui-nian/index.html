@@ -3,13 +3,15 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Sherlockyu&#39;s blog</title>
+  <title>元宵碎碎念 | Sherlockyu&#39;s blog</title>
   <meta name="author" content="Sherlockyu">
+  
+  <meta name="description" content="本来碎碎念应该有123……几部分来的，被家里闹的烦死了，改天吧。">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  
+  <meta property="og:title" content="元宵碎碎念"/>
   <meta property="og:site_name" content="Sherlockyu&#39;s blog"/>
 
   
@@ -200,8 +202,7 @@
 </nav>
 <div class="clearfix"></div></header>
   <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper">
-  <article class="post">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
   
   <div class="post-content">
     <header>
@@ -211,7 +212,7 @@
       
       
   
-    <h1 class="title"><a href="/2014/02/14/sui-sui-nian/">元宵碎碎念</a></h1>
+    <h1 class="title">元宵碎碎念</h1>
   
 
     </header>
@@ -224,7 +225,14 @@
     <footer>
       
         
+  
+  <div class="categories">
+    <a href="/categories/杂谈/">杂谈</a>
+  </div>
+
         
+		<div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdPic":"","bdStyle":"0","bdSize":"16"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
       
       <div class="clearfix"></div>
     </footer>
@@ -232,204 +240,24 @@
 </article>
 
 
+<section id="comment">
+  <!-- Duoshuo Comment BEGIN -->
+	<div class="ds-thread"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"huaduoshuo"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = 'http://static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		|| document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- Duoshuo Comment END -->
+</section>
 
-
-  <article class="post">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2014-02-09T06:51:03.000Z"><a href="/2014/02/09/hexo-totop/">2月 9 2014</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2014/02/09/hexo-totop/">Hexo优化：添加返回顶部按钮</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>参考<a href="http://wuchong.me/blog/2014/01/08/hexo-scrollup/" target="_blank">Jack</a>的blog，成功添加了<code>返回顶部</code>按钮。</p>
-<h2 id="-html-">添加HTML代码</h2>
-<p>新建文件<code>\themes\light\layout\_partial\totop.ejs</code>，打开后添加如下：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre>1
-2
-3
-</pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"totop"</span> <span class="attribute">style</span>=<span class="value">"position:fixed;bottom:150px;right:50px;cursor: pointer;"</span>&gt;</span>
-<span class="tag">&lt;<span class="title">a</span> <span class="attribute">title</span>=<span class="value">"返回顶部"</span>&gt;</span><span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">"/imgs/scrollup.png"</span>/&gt;</span><span class="tag">&lt;/<span class="title">a</span>&gt;</span>
-<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
-</pre></td></tr></table></figure>
-
-<p>
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2014/02/09/hexo-totop/#more" class="more-link">Read More</a>
-          </div>
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
-  <article class="post">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2014-02-02T03:07:45.000Z"><a href="/2014/02/02/hexo-setting/">2月 2 2014</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2014/02/02/hexo-setting/">Hexo 设置以及light主题优化</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>写这篇呢也就是为了自己以后改什么找什么方便一些，其实大部分都是对Zippera博客的整理。</p>
-<p>对于搭建hexo博客，我是参照Zippera的<a href="http://zipperary.com/2013/05/28/hexo-guide-2/" target="_blank">教程二</a>，里面介绍的很详细。最后在<code>_config.yml</code>中添加deploy的时候repository项使用ssh地址会更方便些。</p>
-<p>而且楼主之前设置的passphrase设置的过于复杂，所以每次deploy都是很麻烦。</p>
-<h2 id="-light-"><strong>light主题优化</strong></h2>
-<h3 id="-install-"><strong>Install</strong></h3>
-<p>
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2014/02/02/hexo-setting/#more" class="more-link">Read More</a>
-          </div>
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
-  <article class="post">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2014-01-31T03:04:37.000Z"><a href="/2014/01/31/my-new-post/">1月 31 2014</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2014/01/31/my-new-post/">初体验</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>网上说这玩意要用markdown，今天来试试看。</p>
-<p><em>话说这些东西都能记住么</em></p>
-<p><strong>先来看看怎么粘代码：</strong></p>
-<p>行的开头空4个空格，表示程序代码，但是这样会没有行号，这里我用的是另一种方法</p>
-<p>C:</p>
-<figure class="highlight [c]"><table><tr><td class="gutter"><pre>1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-</pre></td><td class="code"><pre><span class="comment">#include &lt;stdio.h&gt;</span>
-<span class="comment">#define MAXN 100+10</span>
-<span class="keyword">int</span> a[MAXN];
-<span class="keyword">int</span> main()  {
-    <span class="keyword">int</span> i, <span class="keyword">x</span>, n = <span class="number">0</span>;
-    <span class="keyword">printf</span>(<span class="string">"Please enter numbers using 'e' for ending."</span>);
-    <span class="keyword">while</span>(scanf(<span class="string">"<span class="variable">%d</span>"</span>, &<span class="keyword">x</span>) == <span class="number">1</span>)
-        a[n++] = <span class="keyword">x</span>;
-    <span class="keyword">for</span>(i = n-<span class="number">1</span>; i &gt;= <span class="number">1</span>; i--)
-        <span class="keyword">printf</span>(<span class="string">"<span class="variable">%d</span> "</span>, a[i]);
-    <span class="keyword">printf</span>(<span class="string">"<span class="variable">%d</span>\n"</span>, a[<span class="number">0</span>]);
-    <span class="keyword">return</span> <span class="number">0</span>;
-}
-</pre></td></tr></table></figure>
-
-<p>
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2014/01/31/my-new-post/#more" class="more-link">Read More</a>
-          </div>
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
-  <article class="post">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2014-01-30T07:49:50.000Z"><a href="/2014/01/30/hello-world/">1月 30 2014</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2014/01/30/hello-world/">Hello new year</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>Hello everybody! Happy new year!</p>
-
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
-
-<nav id="pagination">
-  
-  
-  <div class="clearfix"></div>
-</nav></div></div>
+</div></div>
     <aside id="sidebar" class="alignright">
   
 <div class="widget tag">
