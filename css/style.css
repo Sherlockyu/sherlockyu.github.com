@@ -751,7 +751,6 @@ figure.highlight {
 figure.highlight figcaption {
   color: #999;
   margin-bottom: 5px;
-  text-shadow: 0 0 1px #fff;
 }
 figure.highlight figcaption a {
   position: absolute;
@@ -775,7 +774,7 @@ figure.highlight .gutter {
 figure.highlight .code {
   padding-left: 15px;
   border-left: 0px solid #fff;
-  color: #666;
+  color: #f5f5f5;
 }
 pre .comment,
 pre .template_comment,
