@@ -4,7 +4,7 @@
   <subtitle><![CDATA[水+水+水，就是水立方啊！！o(*≧▽≦)ツ]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2014-02-14T13:12:12.053Z</updated>
+  <updated>2014-02-15T08:42:30.218Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -13,20 +13,6 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
-  
-  <entry>
-    <title><![CDATA[元宵碎碎念]]></title>
-    <link href="http://yoursite.com/2014/02/14/sui-sui-nian/"/>
-    <id>http://yoursite.com/2014/02/14/sui-sui-nian/</id>
-    <published>2014-02-14T12:56:25.000Z</published>
-    <updated>2014-02-14T13:12:02.000Z</updated>
-    <content type="html"><![CDATA[<p>本来碎碎念应该有123……几部分来的，被家里闹的烦死了，改天吧。</p>
-]]></content>
-    
-    
-      <category term="杂谈" scheme="http://yoursite.com/categories/%E6%9D%82%E8%B0%88/"/>
-    
-  </entry>
   
   <entry>
     <title><![CDATA[Hexo优化：添加返回顶部按钮]]></title>
