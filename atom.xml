@@ -4,7 +4,7 @@
   <subtitle><![CDATA[爱生活——爱折腾——爱银他妈]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2014-02-21T12:17:30.464Z</updated>
+  <updated>2014-02-21T13:09:55.026Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,13 +15,51 @@
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[sf 01]]></title>
+    <title><![CDATA[算法竞赛入门经典第一章小结与练习]]></title>
     <link href="http://yoursite.com/2014/02/21/sf-01/"/>
     <id>http://yoursite.com/2014/02/21/sf-01/</id>
     <published>2014-02-21T07:59:50.000Z</published>
-    <updated>2014-02-21T07:59:50.000Z</updated>
-    <content type="html"><![CDATA[]]></content>
+    <updated>2014-02-21T13:08:16.000Z</updated>
+    <content type="html"><![CDATA[<p>之前没怎么系统地学习过算法，在网上看到《算法竞赛入门经典》这本书还不错，下决心跟着做一做练一练。</p>
+<p>第一章
+【学习目标】</p>
+<ul>
+<li>熟练C语言程序的编译和运行</li>
+<li>学会编程计算并输出常见的算法表达式的结果</li>
+<li>掌握整数和浮点数的含义和输出方法</li>
+<li>掌握数学函数的使用方法</li>
+<li>初步了解变量的含义</li>
+<li>掌握整数和浮点数变量的声明方法</li>
+<li>掌握整数和浮点数变量的读入方法</li>
+<li>掌握变量交换的三变量法</li>
+<li>理解算法竞赛中的程序三步曲：输入、计算、输出</li>
+<li>记住算法竞赛的目标及其对程序的要求</li>
+</ul>
+<a id="more"></a>
+
+<p>1.熟练C语言程序的编译和运行</p>
+<p>网上写的编译应该用 gcc -wall -g test.c -o test,之前也没怎么用过linux，待我以后查一查再补充。</p>
+]]></content>
+    <summary type="html"><![CDATA[<p>之前没怎么系统地学习过算法，在网上看到《算法竞赛入门经典》这本书还不错，下决心跟着做一做练一练。</p>
+<p>第一章
+【学习目标】</p>
+<ul>
+<li>熟练C语言程序的编译和运行</li>
+<li>学会编程计算并输出常见的算法表达式的结果</li>
+<li>掌握整数和浮点数的含义和输出方法</li>
+<li>掌握数学函数的使用方法</li>
+<li>初步了解变量的含义</li>
+<li>掌握整数和浮点数变量的声明方法</li>
+<li>掌握整数和浮点数变量的读入方法</li>
+<li>掌握变量交换的三变量法</li>
+<li>理解算法竞赛中的程序三步曲：输入、计算、输出</li>
+<li>记住算法竞赛的目标及其对程序的要求</li>
+</ul>
+]]></summary>
     
+      <category term="算法" scheme="http://yoursite.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="算法基础" scheme="http://yoursite.com/categories/%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
