@@ -4,7 +4,7 @@
   <subtitle><![CDATA[爱生活——爱折腾——爱银他妈]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2014-02-21T13:09:55.026Z</updated>
+  <updated>2014-02-24T11:35:17.430Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -19,43 +19,129 @@
     <link href="http://yoursite.com/2014/02/21/sf-01/"/>
     <id>http://yoursite.com/2014/02/21/sf-01/</id>
     <published>2014-02-21T07:59:50.000Z</published>
-    <updated>2014-02-21T13:08:16.000Z</updated>
+    <updated>2014-02-24T11:33:33.000Z</updated>
     <content type="html"><![CDATA[<p>之前没怎么系统地学习过算法，在网上看到《算法竞赛入门经典》这本书还不错，下决心跟着做一做练一练。</p>
-<p>第一章
-【学习目标】</p>
-<ul>
-<li>熟练C语言程序的编译和运行</li>
-<li>学会编程计算并输出常见的算法表达式的结果</li>
-<li>掌握整数和浮点数的含义和输出方法</li>
-<li>掌握数学函数的使用方法</li>
-<li>初步了解变量的含义</li>
-<li>掌握整数和浮点数变量的声明方法</li>
-<li>掌握整数和浮点数变量的读入方法</li>
-<li>掌握变量交换的三变量法</li>
-<li>理解算法竞赛中的程序三步曲：输入、计算、输出</li>
-<li>记住算法竞赛的目标及其对程序的要求</li>
-</ul>
-<a id="more"></a>
-
+<p>第一章</p>
+<p>【学习目标】</p>
 <p>1.熟练C语言程序的编译和运行</p>
-<p>网上写的编译应该用 gcc -wall -g test.c -o test,之前也没怎么用过linux，待我以后查一查再补充。</p>
+<p>&emsp;&emsp;流程：C源程序头文件 --&gt; 预编译处理(cpp) --&gt; 编译程序本身 --&gt; 优化程序 --&gt; 汇编程序 --&gt; 链接程序 --&gt; 可执行文件</p>
+<p>&emsp;&emsp;具体原理以后再做研究吧。。。</p>
+<p>2.学会编程计算并输出常见的算法表达式的结果</p>
+<p><a id="more"></a></p>
+<ul>
+<li>输出时%d,%ld,%f,%lf,%5.2f,包括数据强制转换。</li>
+<li><code>include &lt;math.h&gt;</code>中常用数学函数包括：  <ul>
+<li>绝对值double fabs(double);  </li>
+<li>三角函数double sin(double);  </li>
+<li>反三角double asin(double);</li>
+<li>开方double sqrt(double);</li>
+<li>求幂double pow(double a, double x)means a^x;</li>
+<li>求对数 （e为底）double log(double);（10为底）double log10(double)</li>
+<li>取上整double ceil(double);取下整double floor(double); 这里上和下可以理解为取大和取小，比如-1.44，floor后是-2.0，ceil后是-1.0</li>
+<li>注意abs()定义在<code>&lt;stdlib.h&gt;</code>中，也可宏定义：“abs(x) : ((x &gt; 0) ? (x) : (-(x)))”。</li>
+</ul>
+</li>
+</ul>
+<p>3.掌握整数和浮点数的含义和输出方法</p>
+<p>&emsp;&emsp;int、float和double，基本上可以一直使用double吧。scanf()会区分%lf和%f。</p>
+<p>4.掌握数学函数的使用方法</p>
+<pre><code>const double pi = 4.0 * atan(1.0);
+</code></pre><p>5.初步了解变量的含义</p>
+<p>6.掌握整数和浮点数变量的声明方法</p>
+<pre><code>int i; float a; double s;
+</code></pre><p>7.掌握整数和浮点数变量的读入方法</p>
+<pre><code>scanf(&quot;%d %f&quot;, &amp;i, &amp;a);
+</code></pre><p>8.掌握变量交换的三变量法</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="keyword">int</span> i, j, tmp;
+
+tmp = i;
+i = j;
+j = tmp;
+</pre></td></tr></table></figure>
+
+<h2 id="-">例题</h2>
+<p>三整数排序：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+</pre></td><td class="code"><pre><span class="preprocessor">#include&lt;stdio.h&gt;</span>
+
+<span class="keyword">int</span> main()
+{
+	<span class="keyword">int</span> a, b, c, t;
+	
+	<span class="built_in">scanf</span>(<span class="string">"%d %d %d"</span>, &a, &b, &c);
+	<span class="keyword">if</span>(a&gt;b)	{
+		t = a, a = b, b = t;
+	}
+	<span class="keyword">if</span>(a&gt;c)	{
+		t = a, a = c, c = t;
+	}
+	<span class="keyword">if</span>(b&gt;c)	{
+		t = b, b = c, c = t;
+	}
+	<span class="built_in">printf</span>(<span class="string">"%d %d %d\n"</span>, x, y, z);
+	<span class="keyword">return</span> <span class="number">0</span>;
+}
+</pre></td></tr></table></figure>
+
+<h2 id="-">实验</h2>
+<p>使用整型数据时，6个1平方会溢出。sqrt(-10)，使用整型输出时为0，浮点型时为-1.#IND00。浮点数 1.0/0.0 结果是inf，0.0/0.0结果是nan，1/0报错。</p>
+<p>scanf()自动滤掉空格；输出%d用&quot;%%d&quot;，输出“\n”用&quot;\n&quot;。</p>
+<h2 id="-">实践</h2>
+<p>问题1：int型浮点数的最小值和最大值是多少？</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre><span class="preprocessor">#include &lt;stdio.h&gt;    </span>
+<span class="keyword">int</span> main()    
+{    
+    <span class="keyword">int</span> i;    
+    
+    <span class="keyword">for</span> (i = <span class="number">1</span>; i &gt; <span class="number">0</span>; i++) NULL;    
+    <span class="built_in">printf</span>(<span class="string">"%d %d\n"</span>, i, i-<span class="number">1</span>);    
+    <span class="keyword">return</span> <span class="number">0</span>;    
+}
+</pre></td></tr></table></figure>
+
+<p>输出较慢。</p>
+<p>问题2：double型浮点数能精确到多少位小数？或者，这个问题本身值得商榷？</p>
 ]]></content>
     <summary type="html"><![CDATA[<p>之前没怎么系统地学习过算法，在网上看到《算法竞赛入门经典》这本书还不错，下决心跟着做一做练一练。</p>
-<p>第一章
-【学习目标】</p>
-<ul>
-<li>熟练C语言程序的编译和运行</li>
-<li>学会编程计算并输出常见的算法表达式的结果</li>
-<li>掌握整数和浮点数的含义和输出方法</li>
-<li>掌握数学函数的使用方法</li>
-<li>初步了解变量的含义</li>
-<li>掌握整数和浮点数变量的声明方法</li>
-<li>掌握整数和浮点数变量的读入方法</li>
-<li>掌握变量交换的三变量法</li>
-<li>理解算法竞赛中的程序三步曲：输入、计算、输出</li>
-<li>记住算法竞赛的目标及其对程序的要求</li>
-</ul>
-]]></summary>
+<p>第一章</p>
+<p>【学习目标】</p>
+<p>1.熟练C语言程序的编译和运行</p>
+<p>&emsp;&emsp;流程：C源程序头文件 --&gt; 预编译处理(cpp) --&gt; 编译程序本身 --&gt; 优化程序 --&gt; 汇编程序 --&gt; 链接程序 --&gt; 可执行文件</p>
+<p>&emsp;&emsp;具体原理以后再做研究吧。。。</p>
+<p>2.学会编程计算并输出常见的算法表达式的结果</p>
+<p>]]></summary>
     
       <category term="算法" scheme="http://yoursite.com/tags/%E7%AE%97%E6%B3%95/"/>
     
@@ -68,7 +154,7 @@
     <link href="http://yoursite.com/2014/02/18/thought-in-feb-eighteen/"/>
     <id>http://yoursite.com/2014/02/18/thought-in-feb-eighteen/</id>
     <published>2014-02-18T13:17:57.000Z</published>
-    <updated>2014-02-21T08:00:22.000Z</updated>
+    <updated>2014-02-24T08:53:09.000Z</updated>
     <content type="html"><![CDATA[<blockquote>
 <p>你还很年轻,将来你会遇到很多人,经历很多事,得到很多,也会失去很多,但无论如何,有两样东西,你绝不能丢弃,一个叫良心,另一个叫理想。——《明朝那些事儿》</p>
 </blockquote>
@@ -106,6 +192,7 @@
 <li><p>MCM这几年出的题目越来越好了，希望国赛的题目能更有意义些。</p>
 </li>
 </ul>
+<h1 id="-">家教</h1>
 ]]></content>
     <summary type="html"><![CDATA[<blockquote>
 <p>你还很年轻,将来你会遇到很多人,经历很多事,得到很多,也会失去很多,但无论如何,有两样东西,你绝不能丢弃,一个叫良心,另一个叫理想。——《明朝那些事儿》</p>

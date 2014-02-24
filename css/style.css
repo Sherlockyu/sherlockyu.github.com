@@ -10,7 +10,7 @@
   padding: 0;
 }
 body {
-  background-image: url("/imgs/grey.png");
+  background-image: url("/imgs/xingkong.jpeg");
   color: #444;
   font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
   font-size: 16px;
@@ -106,7 +106,7 @@ a:hover {
   margin: 50px auto;
 }
 #header a {
-  color: #999;
+  color: #fff;
 }
 #header a:hover {
   color: #258fb8;
