@@ -4,7 +4,7 @@
   <subtitle><![CDATA[爱生活——爱折腾——爱银他妈]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2014-02-24T11:42:49.442Z</updated>
+  <updated>2014-02-25T00:00:40.930Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://yoursite.com/2014/02/21/sf-01/"/>
     <id>http://yoursite.com/2014/02/21/sf-01/</id>
     <published>2014-02-21T07:59:50.000Z</published>
-    <updated>2014-02-24T11:33:33.000Z</updated>
+    <updated>2014-02-24T13:43:14.000Z</updated>
     <content type="html"><![CDATA[<p>之前没怎么系统地学习过算法，在网上看到《算法竞赛入门经典》这本书还不错，下决心跟着做一做练一练。</p>
 <p>第一章</p>
 <p>【学习目标】</p>
@@ -133,6 +133,57 @@ j = tmp;
 
 <p>输出较慢。</p>
 <p>问题2：double型浮点数能精确到多少位小数？或者，这个问题本身值得商榷？</p>
+<h2 id="-">练习</h2>
+<p>1-1 平均数</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="code"><pre><span class="preprocessor">#include &lt;stdio.h&gt;</span>
+
+<span class="keyword">int</span> main()
+{
+    <span class="keyword">int</span> a, b, c;
+    <span class="keyword">float</span> ave;
+
+    <span class="built_in">scanf</span>(<span class="string">"%d%d%d"</span>, &a, &b, &c);
+    ave = (a + b + c) / <span class="number">3.0</span>;
+    <span class="built_in">printf</span>(<span class="string">"%.3f\n"</span>, ave);
+    <span class="keyword">return</span> <span class="number">0</span>;
+}
+</pre></td></tr></table></figure>
+
+<p>1-2 温度</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="code"><pre><span class="preprocessor">#include &lt;stdio.h&gt;</span>
+
+<span class="keyword">int</span> main()
+{
+    <span class="keyword">int</span> f;
+
+    <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &f);
+    <span class="built_in">printf</span>(<span class="string">"%.3f\n"</span>, <span class="number">5.0</span> * (f - <span class="number">32.0</span>) / <span class="number">9.0</span>);
+    <span class="keyword">return</span> <span class="number">0</span>;
+}
+</pre></td></tr></table></figure>
+
 ]]></content>
     <summary type="html"><![CDATA[<p>之前没怎么系统地学习过算法，在网上看到《算法竞赛入门经典》这本书还不错，下决心跟着做一做练一练。</p>
 <p>第一章</p>

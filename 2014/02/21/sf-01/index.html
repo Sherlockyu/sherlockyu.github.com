@@ -337,6 +337,57 @@ j = tmp;
 
 <p>输出较慢。</p>
 <p>问题2：double型浮点数能精确到多少位小数？或者，这个问题本身值得商榷？</p>
+<h2 id="-">练习</h2>
+<p>1-1 平均数</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="code"><pre><span class="preprocessor">#include &lt;stdio.h&gt;</span>
+
+<span class="keyword">int</span> main()
+{
+    <span class="keyword">int</span> a, b, c;
+    <span class="keyword">float</span> ave;
+
+    <span class="built_in">scanf</span>(<span class="string">"%d%d%d"</span>, &a, &b, &c);
+    ave = (a + b + c) / <span class="number">3.0</span>;
+    <span class="built_in">printf</span>(<span class="string">"%.3f\n"</span>, ave);
+    <span class="keyword">return</span> <span class="number">0</span>;
+}
+</pre></td></tr></table></figure>
+
+<p>1-2 温度</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="code"><pre><span class="preprocessor">#include &lt;stdio.h&gt;</span>
+
+<span class="keyword">int</span> main()
+{
+    <span class="keyword">int</span> f;
+
+    <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &f);
+    <span class="built_in">printf</span>(<span class="string">"%.3f\n"</span>, <span class="number">5.0</span> * (f - <span class="number">32.0</span>) / <span class="number">9.0</span>);
+    <span class="keyword">return</span> <span class="number">0</span>;
+}
+</pre></td></tr></table></figure>
+
 
       
     </div>
