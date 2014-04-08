@@ -4,7 +4,7 @@
   <subtitle><![CDATA[爱生活——爱折腾——爱银他妈]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2014-02-26T09:39:02.406Z</updated>
+  <updated>2014-04-08T08:25:19.411Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -24,7 +24,7 @@
 <p>第一章</p>
 <p>【学习目标】</p>
 <p>1.熟练C语言程序的编译和运行</p>
-<p>&emsp;&emsp;流程：C源程序头文件 --&gt; 预编译处理(cpp) --&gt; 编译程序本身 --&gt; 优化程序 --&gt; 汇编程序 --&gt; 链接程序 --&gt; 可执行文件</p>
+<p>&emsp;&emsp;流程：C源程序头文件 —&gt; 预编译处理(cpp) —&gt; 编译程序本身 —&gt; 优化程序 —&gt; 汇编程序 —&gt; 链接程序 —&gt; 可执行文件</p>
 <p>&emsp;&emsp;具体原理以后再做研究吧。。。</p>
 <p>2.学会编程计算并输出常见的算法表达式的结果</p>
 <p><a id="more"></a></p>
@@ -45,12 +45,12 @@
 <p>3.掌握整数和浮点数的含义和输出方法</p>
 <p>&emsp;&emsp;int、float和double，基本上可以一直使用double吧。scanf()会区分%lf和%f。</p>
 <p>4.掌握数学函数的使用方法</p>
-<pre><code>const double pi = 4.0 * atan(1.0);
+<pre><code><span class="keyword">const</span> <span class="keyword">double</span> pi = <span class="number">4.0</span> * <span class="built_in">atan</span>(<span class="number">1.0</span>);
 </code></pre><p>5.初步了解变量的含义</p>
 <p>6.掌握整数和浮点数变量的声明方法</p>
-<pre><code>int i; float a; double s;
+<pre><code><span class="keyword">int</span> i; <span class="keyword">float</span> a; <span class="keyword">double</span> s;
 </code></pre><p>7.掌握整数和浮点数变量的读入方法</p>
-<pre><code>scanf(&quot;%d %f&quot;, &amp;i, &amp;a);
+<pre><code>scanf(<span class="string">"<span class="variable">%d</span> <span class="variable">%f</span>"</span>, &amp;i, &amp;a);
 </code></pre><p>8.掌握变量交换的三变量法</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre>1
 2
@@ -64,7 +64,7 @@ i = j;
 j = tmp;
 </pre></td></tr></table></figure>
 
-<h2 id="-">例题</h2>
+<h2 id="例题">例题</h2>
 <p>三整数排序：</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre>1
 2
@@ -106,10 +106,10 @@ j = tmp;
 }
 </pre></td></tr></table></figure>
 
-<h2 id="-">实验</h2>
+<h2 id="实验">实验</h2>
 <p>使用整型数据时，6个1平方会溢出。sqrt(-10)，使用整型输出时为0，浮点型时为-1.#IND00。浮点数 1.0/0.0 结果是inf，0.0/0.0结果是nan，1/0报错。</p>
-<p>scanf()自动滤掉空格；输出%d用&quot;%%d&quot;，输出“\n”用&quot;\n&quot;。</p>
-<h2 id="-">实践</h2>
+<p>scanf()自动滤掉空格；输出%d用”%%d”，输出“\n”用”\n”。</p>
+<h2 id="实践">实践</h2>
 <p>问题1：int型浮点数的最小值和最大值是多少？</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre>1
 2
@@ -133,7 +133,7 @@ j = tmp;
 
 <p>输出较慢。</p>
 <p>问题2：double型浮点数能精确到多少位小数？或者，这个问题本身值得商榷？</p>
-<h2 id="-">练习</h2>
+<h2 id="练习">练习</h2>
 <p>1-1 average</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre>1
 2
@@ -440,7 +440,7 @@ j = tmp;
 <p>第一章</p>
 <p>【学习目标】</p>
 <p>1.熟练C语言程序的编译和运行</p>
-<p>&emsp;&emsp;流程：C源程序头文件 --&gt; 预编译处理(cpp) --&gt; 编译程序本身 --&gt; 优化程序 --&gt; 汇编程序 --&gt; 链接程序 --&gt; 可执行文件</p>
+<p>&emsp;&emsp;流程：C源程序头文件 —&gt; 预编译处理(cpp) —&gt; 编译程序本身 —&gt; 优化程序 —&gt; 汇编程序 —&gt; 链接程序 —&gt; 可执行文件</p>
 <p>&emsp;&emsp;具体原理以后再做研究吧。。。</p>
 <p>2.学会编程计算并输出常见的算法表达式的结果</p>
 <p>]]></summary>
@@ -464,23 +464,15 @@ j = tmp;
 <p>&emsp;&emsp;之前有一段时间也曾想读一读心学的书，无奈阅历尚浅，看了几部分体会不到大体，只好作罢。</p>
 <p>&emsp;&emsp;而今又读到聂豹对徐阶说的这句，再想想自己这年，所幸这两样东西都还带着，虽然不多，总算还有，希望以后也能一直带着。</p>
 <p><a id="more"></a></p>
-<h1 id="mcm">MCM</h1>
+<h1 id="MCM">MCM</h1>
 <p>&emsp;&emsp;算起来这也是第三次做MCM了。</p>
 <h2 id="2012">2012</h2>
-<p>&emsp;&emsp;第一次参加美赛，假期的时候准备了好多资料，不定期地发给靠谱的team member No.1和No.2，虽然我相信他们一点都没有看。
-比赛那几天可以说是配合的超级完美了，选题很迅速——正如往常参加国赛一样。
-就我个人来讲是很不喜欢过度纠结于选题，其实靠我们这点知识储备，选哪道题完全没什么差别好么，选一道觉得可以入手的，坚持做下去就可以了。
-我们有专业的程序猿，有专业的英文写手，我在当中检索材料、整理信息，最终完成了一篇很满意的paper，起码我是很满意的~</p>
+<p>&emsp;&emsp;第一次参加美赛，假期的时候准备了好多资料，不定期地发给靠谱的team member No.1和No.2，虽然我相信他们一点都没有看。<br>比赛那几天可以说是配合的超级完美了，选题很迅速——正如往常参加国赛一样。<br>就我个人来讲是很不喜欢过度纠结于选题，其实靠我们这点知识储备，选哪道题完全没什么差别好么，选一道觉得可以入手的，坚持做下去就可以了。<br>我们有专业的程序猿，有专业的英文写手，我在当中检索材料、整理信息，最终完成了一篇很满意的paper，起码我是很满意的~</p>
 <p>&emsp;&emsp;当时就想能有个Honorable mention就很满足了，后来得知是Meritorious的时候那是相当开心了。<em>（Lucky enough）</em></p>
 <h2 id="2013">2013</h2>
-<p>&emsp;&emsp;第二次MCM，时间不是特别好，跟猴子在学校从放假呆到比赛，冻成狗了真是。
-那几天把饺子煮成了片汤，把汤圆煮成了片汤，把电饭锅搞到洗脚盆里，想想还是很有意思啊！
-可能前一年的成绩还不错，总觉得这次比赛不够专注，起码我自己这么感觉。
-而且很大胆地没有太多借鉴别人的成果，自己造了一个。创新点嘛，还是有一些的，实际靠谱的成分嘛，确实没有啥。。。
-不幸地是，这次又是国内组评定，所以我们那个有些天马行空的东西必然就成功参赛了。</p>
+<p>&emsp;&emsp;第二次MCM，时间不是特别好，跟猴子在学校从放假呆到比赛，冻成狗了真是。<br>那几天把饺子煮成了片汤，把汤圆煮成了片汤，把电饭锅搞到洗脚盆里，想想还是很有意思啊！<br>可能前一年的成绩还不错，总觉得这次比赛不够专注，起码我自己这么感觉。<br>而且很大胆地没有太多借鉴别人的成果，自己造了一个。创新点嘛，还是有一些的，实际靠谱的成分嘛，确实没有啥。。。<br>不幸地是，这次又是国内组评定，所以我们那个有些天马行空的东西必然就成功参赛了。</p>
 <h2 id="2014">2014</h2>
-<p>&emsp;&emsp;第三次，就是给同学帮帮忙，不过我二呵呵地把时间忘了，到头来也没帮上什么。
-好在这次目标也算比较明确，就是冲着成功参赛的，压力不大，拼凑了一篇，看上去还不错。</p>
+<p>&emsp;&emsp;第三次，就是给同学帮帮忙，不过我二呵呵地把时间忘了，到头来也没帮上什么。<br>好在这次目标也算比较明确，就是冲着成功参赛的，压力不大，拼凑了一篇，看上去还不错。</p>
 <p>&emsp;&emsp;从大一开始，参加了许多数学建模比赛，分享一些感想：</p>
 <ul>
 <li><p>组队：最好是来自不同专业的几个同学，这样知识面会广很多，像我们组同是电类专业，遇到经济、统计方面的问题直接就放弃了，很可惜的。</p>
@@ -494,7 +486,7 @@ j = tmp;
 <li><p>MCM这几年出的题目越来越好了，希望国赛的题目能更有意义些。</p>
 </li>
 </ul>
-<h1 id="-">家教</h1>
+<h1 id="家教">家教</h1>
 ]]></content>
     <summary type="html"><![CDATA[<blockquote>
 <p>你还很年轻,将来你会遇到很多人,经历很多事,得到很多,也会失去很多,但无论如何,有两样东西,你绝不能丢弃,一个叫良心,另一个叫理想。——《明朝那些事儿》</p>
@@ -515,7 +507,7 @@ j = tmp;
     <published>2014-02-09T06:51:03.000Z</published>
     <updated>2014-02-09T07:10:30.000Z</updated>
     <content type="html"><![CDATA[<p>参考<a href="http://wuchong.me/blog/2014/01/08/hexo-scrollup/" target="_blank">Jack</a>的blog，成功添加了<code>返回顶部</code>按钮。</p>
-<h2 id="-html-">添加HTML代码</h2>
+<h2 id="添加HTML代码">添加HTML代码</h2>
 <p>新建文件<code>\themes\light\layout\_partial\totop.ejs</code>，打开后添加如下：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre>1
 2
@@ -526,7 +518,7 @@ j = tmp;
 </pre></td></tr></table></figure>
 
 <p><a id="more"></a></p>
-<h2 id="-js-">添加JS代码</h2>
+<h2 id="添加JS代码">添加JS代码</h2>
 <p>新建文件<code>\themes\light\source\js\totop.js</code>，打开后添加如下：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre>1
 2
@@ -585,7 +577,7 @@ j = tmp;
 </pre></td></tr></table></figure>
 
 <p>修改<code>upperLimit</code>和<code>scrollSpeed</code>可以修改显示位置和回滚速度。</p>
-<h2 id="-">添加引用</h2>
+<h2 id="添加引用">添加引用</h2>
 <p>修改<code>\themes\light\layout\_partial\after_footer.ejs</code>，在末尾添加：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre>1
 2
@@ -593,13 +585,13 @@ j = tmp;
 <span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"&lt;%- config.root %&gt;js/totop.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
 </pre></td></tr></table></figure>
 
-<h2 id="-">添加按钮图片</h2>
+<h2 id="添加按钮图片">添加按钮图片</h2>
 <p>将图片放到<code>\themes\light\source\imgs</code>下，命名为<code>scrollup.png</code>。</p>
 <hr>
 <p><strong>WELL DONE！</strong></p>
 ]]></content>
     <summary type="html"><![CDATA[<p>参考<a href="http://wuchong.me/blog/2014/01/08/hexo-scrollup/" target="_blank">Jack</a>的blog，成功添加了<code>返回顶部</code>按钮。</p>
-<h2 id="-html-">添加HTML代码</h2>
+<h2 id="添加HTML代码">添加HTML代码</h2>
 <p>新建文件<code>\themes\light\layout\_partial\totop.ejs</code>，打开后添加如下：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre>1
 2
@@ -626,16 +618,15 @@ j = tmp;
     <content type="html"><![CDATA[<p>写这篇呢也就是为了自己以后改什么找什么方便一些，其实大部分都是对Zippera博客的整理。</p>
 <p>对于搭建hexo博客，我是参照Zippera的<a href="http://zipperary.com/2013/05/28/hexo-guide-2/" target="_blank">教程二</a>，里面介绍的很详细。最后在<code>_config.yml</code>中添加deploy的时候repository项使用ssh地址会更方便些。</p>
 <p>而且楼主之前设置的passphrase设置的过于复杂，所以每次deploy都是很麻烦。</p>
-<h2 id="-light-"><strong>light主题优化</strong></h2>
-<h3 id="-install-"><strong>Install</strong></h3>
-<p><a id="more"></a>
-输入如下并且在<code>..\Hexo\_config.yml</code>中将<code>theme</code>改为<code>light</code>：</p>
-<pre><code>git clone git://github.com/tommy351/hexo-theme-light.git themes/light
-</code></pre><h3 id="-update-"><strong>Update</strong></h3>
+<h2 id="<strong>light主题优化</strong>"><strong>light主题优化</strong></h2>
+<h3 id="<strong>Install</strong>"><strong>Install</strong></h3>
+<p><a id="more"></a><br>输入如下并且在<code>..\Hexo\_config.yml</code>中将<code>theme</code>改为<code>light</code>：</p>
+<pre><code>git <span class="keyword">clone</span> git:<span class="comment">//github.com/tommy351/hexo-theme-light.git themes/light</span>
+</code></pre><h3 id="<strong>Update</strong>"><strong>Update</strong></h3>
 <p>输入如下：</p>
-<pre><code>cd themes/light
+<pre><code><span class="built_in">cd</span> themes/light
 git pull
-</code></pre><h3 id="-config-"><strong>Config</strong></h3>
+</code></pre><h3 id="<strong>Config</strong>"><strong>Config</strong></h3>
 <p><strong>1.menu——设置导航栏</strong></p>
 <p>打开<code>..\Hexo\themes\light\_config.yml</code>,可以对menu进行设置，可以参考zippera<a href="http://zipperary.com/2013/05/30/hexo-guide-4/" target="_blank">教程四</a>。</p>
 <p>例如：添加“关于”</p>
@@ -666,8 +657,7 @@ git pull
 <p>修改之前：<img src="http://ww1.sinaimg.cn/large/6109b325tw1ed6j747iryj209s01jglj.jpg" alt="2.png"></p>
 <p>试着将<code>#fff</code>改为<code>#0f0</code></p>
 <p>修改之后：<img src="http://ww4.sinaimg.cn/large/6109b325tw1ed6j5uz1omj20c402zt8u.jpg" alt="1.png"></p>
-<p>另外设置blog字体大小，打开<code>..\Hexo\themes\light\source\css\_base\layout.styl</code>，在<code>body</code>段下<code>font-size</code>修改。
-不过这个改的应该是整个页面整体字体的大小~~</p>
+<p>另外设置blog字体大小，打开<code>..\Hexo\themes\light\source\css\_base\layout.styl</code>，在<code>body</code>段下<code>font-size</code>修改。<br>不过这个改的应该是整个页面整体字体的大小~~</p>
 <p><strong>5.添加标签页小图标</strong></p>
 <p>打开<code>..\Hexo\themes\light\layout\_partial\head.ejs</code>，将</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre>1
@@ -735,8 +725,8 @@ git pull
     <summary type="html"><![CDATA[<p>写这篇呢也就是为了自己以后改什么找什么方便一些，其实大部分都是对Zippera博客的整理。</p>
 <p>对于搭建hexo博客，我是参照Zippera的<a href="http://zipperary.com/2013/05/28/hexo-guide-2/" target="_blank">教程二</a>，里面介绍的很详细。最后在<code>_config.yml</code>中添加deploy的时候repository项使用ssh地址会更方便些。</p>
 <p>而且楼主之前设置的passphrase设置的过于复杂，所以每次deploy都是很麻烦。</p>
-<h2 id="-light-"><strong>light主题优化</strong></h2>
-<h3 id="-install-"><strong>Install</strong></h3>
+<h2 id="<strong>light主题优化</strong>"><strong>light主题优化</strong></h2>
+<h3 id="<strong>Install</strong>"><strong>Install</strong></h3>
 <p>]]></summary>
     
       <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
@@ -784,8 +774,7 @@ git pull
 }
 </pre></td></tr></table></figure>
 
-<p><a id="more"></a>
-C#:</p>
+<p><a id="more"></a><br>C#:</p>
 <figure class="highlight c#"><table><tr><td class="gutter"><pre>1
 2
 3
